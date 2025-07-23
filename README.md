@@ -46,7 +46,8 @@ The name **TradeNest** captures the spirit of **growth**, **community**, and **c
 
 ## 🔗 Connect with Me
 
-- [LinkedIn](www.linkedin.com/in/anjali-kumari-b093ab333)  
+- [LinkedIn](www.linkedin.com/in/anjali-kumari-b093ab333)
+   
 - [GitHub](https://github.com/Anjali-Kumari20-dot/TradeNest)
 
 
