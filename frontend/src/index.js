@@ -11,12 +11,12 @@ import SupportPage from './landing_page/support/SupportPage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    < AboutPage />
+    {/* < AboutPage /> */}
     < HomePage />
-    < PricingPage />
-    < ProductsPage />
-    < SignupPage />
-    < SupportPage />
+    {/* < PricingPage /> */}
+    {/* < ProductsPage /> */}
+    {/* < SignupPage /> */}
+    {/* < SupportPage /> */}
   </React.StrictMode>
 );
 

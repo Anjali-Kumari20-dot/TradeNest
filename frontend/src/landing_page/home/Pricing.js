@@ -11,7 +11,7 @@ const Pricing = () => {
             in India. Flat fees and no hidden charges.
           </p>
 
-          <a href="" className=" fs-5 mr-2" style={{ textDecoration: "none" }}>
+          <a href="" className=" fs-5" style={{ textDecoration: "none" }}>
             See Pricing
             <i class="fa-solid fa-arrow-right"></i>
           </a>
