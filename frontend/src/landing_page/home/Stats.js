@@ -8,9 +8,9 @@ const Stats = () => {
           <h2 className="mb-5 fs-3">Trust with confidence</h2>
           <h4 className="fs-5 mt-5">Customer-first always</h4>
           <p className="mt-3 text-muted">
-            That's why 1.6+ crore customers trust TradeNest with ~ ₹6 lakh crores
-            of equity investments and contribute to 15% of daily retail exchange
-            volumes in India.
+            That's why 1.6+ crore customers trust TradeNest with ~ ₹6 lakh
+            crores of equity investments and contribute to 15% of daily retail
+            exchange volumes in India.
           </p>
 
           <h4 className="fs-5 mt-5">No spam or gimmicks</h4>
@@ -26,7 +26,7 @@ const Stats = () => {
             fintech startups offer you tailored services specific to your needs.
           </p>
 
-          <h4 className="fs-5 mt-5">Do better with money</h4>
+          <h4 className="fs-5 heading mt-5">Do better with money</h4>
           <p className="mt-3 text-muted">
             With initiatives like Nudge and Kill Switch, we don't just
             facilitate transactions, but actively help you do better with your
@@ -34,12 +34,17 @@ const Stats = () => {
           </p>
         </div>
         <div className="col-6 mt-3">
-          <img src="media/images/ecosystem.png" className="mb-2" style={{ width: "95%" }} />
+          <img
+            src="media/images/ecosystem.png"
+            className="mb-2"
+            style={{ width: "95%" }}
+            alt="TradeNest fintech ecosystem"
+          />
           <div className="text-center mt-5">
-            <a href="" className="mx-5 fs-5" style={{textDecoration:"none"}}>
+            <a href="" className="mx-5 fs-5" style={{ textDecoration: "none" }}>
               Explore our products <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="" className="fs-5" style={{textDecoration:"none"}}>
+            <a href="" className="fs-5" style={{ textDecoration: "none" }}>
               Try Kite demo <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>

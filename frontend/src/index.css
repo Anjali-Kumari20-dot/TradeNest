@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.custom-text {
+  font-size: 0.7rem;
+}
+.anchor-text {
+  font-size: 1.06rem;
+  font-weight: 500;
+  color: rgb(131, 169, 210);
+  text-align: left;
+  margin-left: -20px;
+}
+.heading{
+  color: rgb(32, 40, 36);
+}
