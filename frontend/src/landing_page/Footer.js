@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="border-top" style={{ backgroundColor: "#fbfbfb" }}>
-      <div className="container" >
+      <div className="container">
         <div className="row">
-          <div className="col-4 mt-n4">
+          <div className="col-4 p-5">
             <img
               src="media/images/TradeNestLogo.png"
               className="img-fluid ms-4"
@@ -18,82 +18,93 @@ const Footer = () => {
                 fontSize: "14px",
                 marginLeft: "3rem",
                 marginRight: "1rem",
-                marginTop: "-3rem"
+                marginTop: "-3rem",
               }}
             >
               &copy; 2010 - 2025, TradeNest Broking Ltd. All rights reserved.
             </p>
+            <div className="ms-4-5 mt-3 mb-4 ">
+              <i class="fa-brands fa-x-twitter mx-3 fs-5 custom-i"></i>
+              <i class="fa-brands fa-square-facebook mx-3 fs-5 custom-i"></i>
+              <i class="fa-brands fa-instagram mx-3 fs-5 custom-i"></i>
+              <i class="fa-brands fa-linkedin-in mx-3 fs-5 custom-i"></i>
+            </div>
+            <div className="ms-4-5 border-top pt-4">
+              <i class="fa-brands fa-youtube mx-3 fs-5 custom-i"></i>
+              <i class="fa-brands fa-whatsapp mx-3 fs-5 custom-i"></i>
+              <i class="fa-brands fa-telegram mx-3 fs-5 custom-i"></i>
+            </div>
           </div>
           <div className="col-2 mt-4-5">
             <h5>Company</h5>
-            <a href="#">Minor demat account</a>
+            <a href="#" className="custom-link">Minor demat account</a>
             <br />
-            <a href="#">Open demat account</a>
+            <a href="#" className="custom-link">Open demat account</a>
             <br />
-            <a href="#">NRI demat account</a>
+            <a href="#" className="custom-link">NRI demat account</a>
             <br />
-            <a href="#">Commodity</a>
+            <a href="#" className="custom-link">Commodity</a>
             <br />
-            <a href="#">Dematerialisation</a>
+            <a href="#" className="custom-link">Dematerialisation</a>
             <br />
-            <a href="#">Fund transfer</a>
+            <a href="#" className="custom-link">Fund transfer</a>
             <br />
-            <a href="#">MTF</a>
+            <a href="#" className="custom-link">MTF</a>
             <br />
-            <a href="#">Referral program</a>
+            <a href="#" className="custom-link">Referral program</a>
             <br />
           </div>
           <div className="col-2  mt-4-5">
             <h5>Support</h5>
-            <a href="#">Contact us</a>
+            <a href="#" className="custom-link">Contact us</a>
             <br />
-            <a href="#">Support portal</a>
+            <a href="#" className="custom-link">Support portal</a>
             <br />
-            <a href="#">How to file a complaint?</a>
+            <a href="#" className="custom-link">How to file a complaint?</a>
             <br />
-            <a href="#">Status of your complaints</a>
+            <a href="#" className="custom-link">Status of your complaints</a>
             <br />
-            <a href="#">Bulletin</a>
+            <a href="#" className="custom-link">Bulletin</a>
             <br />
-            <a href="#">Circular</a>
+            <a href="#" className="custom-link">Circular</a>
             <br />
-            <a href="#">Z-Connect blog</a>
+            <a href="#" className="custom-link">Z-Connect blog</a>
             <br />
-            <a href="#">Downloads</a>
+            <a href="#" className="custom-link">Downloads</a>
             <br />
           </div>
           <div className="col-2 mt-4-5">
             <h5>Account</h5>
-            <a href="#">About</a>
+            <a href="#" className="custom-link">About</a>
             <br />
-            <a href="#">Philosophy</a>
+            <a href="#" className="custom-link">Philosophy</a>
             <br />
-            <a href="#">Press & media</a>
+            <a href="#" className="custom-link">Press & media</a>
             <br />
-            <a href="#">Careers</a>
+            <a href="#" className="custom-link">Careers</a>
             <br />
-            <a href="#">TradeNest Cares (CSR)</a>
+            <a href="#" className="custom-link">TradeNest Cares (CSR)</a>
             <br />
-            <a href="#">TradeNest.tech</a>
+            <a href="#" className="custom-link">TradeNest.tech</a>
             <br />
-            <a href="#">Open source</a>
+            <a href="#" className="custom-link">Open source</a>
             <br />
           </div>
           <div className="col-2 mt-4-5">
             <h5>Quick Links</h5>
-            <a href="#">Upcoming IPOs</a>
+            <a href="#" className="custom-link">Upcoming IPOs</a>
             <br />
-            <a href="#">Brokerage charges</a>
+            <a href="#" className="custom-link">Brokerage charges</a>
             <br />
-            <a href="#">Market holidays</a>
+            <a href="#" className="custom-link">Market holidays</a>
             <br />
-            <a href="#">Economic calendar</a>
+            <a href="#" className="custom-link">Economic calendar</a>
             <br />
-            <a href="#">Calculators</a>
+            <a href="#" className="custom-link">Calculators</a>
             <br />
-            <a href="#">Markets</a>
+            <a href="#" className="custom-link">Markets</a>
             <br />
-            <a href="#">Sectors</a>
+            <a href="#" className="custom-link">Sectors</a>
             <br />
           </div>
         </div>
@@ -103,27 +114,27 @@ const Footer = () => {
             <p>
               TradeNest Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI
               Registration no.: INZ000031633 CDSL/NSDL: Depository services
-              through TradeNest Broking Ltd. – SEBI Registration no.:
-              IN-DP-431-2019 Commodity Trading through TradeNest Commodities Pvt.
-              Ltd. MCX: 46025; NSE-50001 – SEBI Registration no.: INZ000038238
-              Registered Address: TradeNest Broking Ltd., #153/154, 4th Cross,
-              Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th Phase,
-              Bengaluru - 560078, Karnataka, India. For any complaints
-              pertaining to securities broking please write to
-              complaints@TradeNest.com, for DP related to dp@TradeNest.com. Please
-              ensure you carefully read the Risk Disclosure Document as
+              through TradeNest Brokisng Ltd. – SEBI Registration no.:
+              IN-DP-431-2019 Commodity Trading through TradeNest Commodities
+              Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI Registration no.:
+              INZ000038238 Registered Address: TradeNest Broking Ltd., #153/154,
+              4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar
+              4th Phase, Bengaluru - 560078, Karnataka, India. For any
+              complaints pertaining to securities broking please write to 
+              <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}> complaints@TradeNest.com</a>, for DP related to dp@TradeNest.com.
+              Please ensure you carefully read the Risk Disclosure Document as
               prescribed by SEBI | ICF
             </p>
 
             <p>
-              Procedure to file a complaint on SEBI SCORES: Register on SCORES
+              Procedure to file a complaint on <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}>SEBI SCORES</a>: Register on SCORES
               portal. Mandatory details for filing complaints on SCORES: Name,
               PAN, Address, Mobile Number, E-mail ID. Benefits: Effective
               Communication, Speedy redressal of the grievances
             </p>
 
             <p>
-              Smart Online Dispute Resolution | Grievances Redressal Mechanism
+              <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}>Smart Online Dispute Resolution | Grievances Redressal Mechanism</a>
             </p>
 
             <p>
@@ -142,8 +153,8 @@ const Footer = () => {
             </p>
 
             <p>
-              India's largest broker based on networth as per NSE. NSE broker
-              factsheet
+              India's largest broker based on networth as per NSE. <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}>NSE broker
+              factsheet</a>
             </p>
 
             <p>
@@ -162,8 +173,20 @@ const Footer = () => {
               in your bank account. As a business we don't give stock tips, and
               have not authorized anyone to trade on behalf of others. If you
               find anyone claiming to be part of TradeNest and offering such
-              services, please create a ticket here.
+              services, please <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}>create a ticket here.</a>
             </p>
+          </div>
+          <div className="ms-5">
+            <ul>
+              <a href="#" className="me-4">NSE </a>
+              <a href="#" className="me-4">BSE </a>
+              <a href="#" className="me-4">MCX </a>
+              <a href="#" className="me-4">Terms & conditions </a>
+              <a href="#" className="me-4">Policies & procedures </a>
+              <a href="#" className="me-4">Privacy policy Disclosure </a>
+              <a href="#" className="me-4">For investor's attention </a>
+              <a href="#" className="me-4">Investor charter</a>
+            </ul>
           </div>
         </div>
       </div>

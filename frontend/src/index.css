@@ -1,8 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,6 +23,9 @@ code {
   text-align: left;
   margin-left: -20px;
 }
+a:hover{
+  color: rgb(23, 23, 23);
+}
 .heading{
   color: rgb(32, 40, 36);
 }
@@ -35,16 +40,30 @@ code {
   font-size: 19.2px;
 }
 .mt-4-5{
-  margin-top: 2.03rem;
+  margin-top: 1.8rem;
 }
-
-a{
+.ms-4-5{
+  margin-left: 1.8rem;
+}
+.custom-link{
   text-decoration: none;
   color: #666;
   font-size: 14px;
   padding-top: 1rem;
+  display: inline-block; /* Makes margin-bottom work */
+  margin-bottom: 7px;
+}
+.custom-link:hover{
+  color: #007bff;
+}
+.custom-i{
+  color: #545454;
+}
+.custom-i:hover{
+  color: #007bff;
 }
 .text-more-small{
-  font-size: 10.4px;
+  font-size: 11.5px;
+  line-height: 1.6; 
   color: #9b9b9b;
 }

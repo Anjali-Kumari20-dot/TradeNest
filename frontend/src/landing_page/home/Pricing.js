@@ -11,28 +11,28 @@ const Pricing = () => {
             in India. Flat fees and no hidden charges.
           </p>
 
-          <a href="" className=" fs-5" style={{ textDecoration: "none" }}>
+          <a href="#" className=" fs-5" style={{ textDecoration: "none"}}>
             See Pricing
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right ms-2"></i>
           </a>
         </div>
         <div className="col-2"></div>
         <div className="col-6">
           <div className="row text-center">
 
-            <div className="col d-flex align-items-end">
+            <div className="col d-flex flex-column align-items-center">
               <img style={{width : "65%"}} src="media/images/pricing0.svg" />
-              <p className="custom-text text-muted ms-0 mb-0">Free account opening</p>
+              <p className="custom-text text-muted mt-2 mb-0">Free account opening</p>
             </div>
 
-            <div className="col d-flex align-items-end">
+            <div className="col d-flex flex-column align-items-center">
               <img style={{width : "65%"}} src="media/images/pricing0.svg" />
-              <p className="custom-text text-muted ms-0 mb-0">Free equity delivery and direct mutual funds</p>
+              <p className="custom-text text-muted mt-2 mb-0">Free equity delivery and direct mutual funds</p>
             </div>
 
-            <div className="col d-flex align-items-end">
+            <div className="col d-flex flex-column align-items-center">
               <img style={{width : "65%"}} src="media/images/pricing-20.svg" />
-              <p className="custom-text text-muted  ms-0 mb-0">Intraday and F&O</p>
+              <p className="custom-text text-muted  mt-2 mb-0">Intraday and F&O</p>
             </div>
 
           </div>

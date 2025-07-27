@@ -49,10 +49,13 @@ const Navbar = () => {
                   Pricing
                 </a>
               </li>
-              <li class="nav-item me-5">
+              <li class="nav-item">
                 <a class="nav-link" href="#">
                   Support
                 </a>
+              </li>
+              <li class="nav-item mt-2 ">
+                <i class="fa-solid fa-bars"></i>
               </li>
             </ul>
           </form>

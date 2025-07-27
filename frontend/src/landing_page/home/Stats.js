@@ -41,10 +41,10 @@ const Stats = () => {
             alt="TradeNest fintech ecosystem"
           />
           <div className="text-center mt-5">
-            <a href="" className="mx-5 fs-5" style={{ textDecoration: "none" }}>
+            <a href="#" className="mx-5 fs-5" style={{ textDecoration: "none" }}>
               Explore our products <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="" className="fs-5" style={{ textDecoration: "none" }}>
+            <a href="#" className="fs-5" style={{ textDecoration: "none" }}>
               Try Kite demo <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
