@@ -1,20 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav
       style={{ height: "70px", backgroundColor: "#fff" }}
-      className="navbar navbar-expand-lg border-bottom"
+      className="navbar fixed-top navbar-expand-lg border-bottom"
     >
+      
       <div class="container ps-5 pe-5" >
-        <a class="navbar-brand" href="#">
+        <Link class="navbar-brand" to="/">
           <img
             src="media/images/TradeNestLogo.png"
             className="img-fluid ms-5"
             style={{ width: "7%", marginRight: "-10px" }}
           />
           <img src="media/images/TradeNest.png" style={{ width: "18%" }} />
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -30,29 +32,29 @@ const Navbar = () => {
           <form class="d-flex" role="search">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <Link class="nav-link" aria-current="page" to="/signup">
                   Signup
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/product">
                   Product
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/pricing">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/support">
                   Support
-                </a>
+                </Link>
               </li>
               <li class="nav-item mt-2 ">
                 <i class="fa-solid fa-bars"></i>

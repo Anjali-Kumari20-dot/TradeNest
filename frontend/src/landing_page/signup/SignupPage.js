@@ -6,9 +6,7 @@ import Footer from '../Footer'
 const SignupPage = () => {
   return (
     <>
-        <Navbar />
         <SignUp />
-        <Footer />
     </>
   )
 }

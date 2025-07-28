@@ -121,20 +121,20 @@ const Footer = () => {
               4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar
               4th Phase, Bengaluru - 560078, Karnataka, India. For any
               complaints pertaining to securities broking please write to 
-              <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}> complaints@TradeNest.com</a>, for DP related to dp@TradeNest.com.
+              <a href="#" style={{ color: "#007bff",textDecoration: "none" ,fontSize: "11.5px", padding: "0"}}> complaints@TradeNest.com</a>, for DP related to dp@TradeNest.com.
               Please ensure you carefully read the Risk Disclosure Document as
               prescribed by SEBI | ICF
             </p>
 
             <p>
-              Procedure to file a complaint on <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}>SEBI SCORES</a>: Register on SCORES
+              Procedure to file a complaint on <a href="#" style={{ color: "#007bff",textDecoration: "none" ,fontSize: "11.5px", padding: "0"}}>SEBI SCORES</a>: Register on SCORES
               portal. Mandatory details for filing complaints on SCORES: Name,
               PAN, Address, Mobile Number, E-mail ID. Benefits: Effective
               Communication, Speedy redressal of the grievances
             </p>
 
             <p>
-              <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}>Smart Online Dispute Resolution | Grievances Redressal Mechanism</a>
+              <a href="#" style={{ color: "#007bff",textDecoration: "none" ,fontSize: "11.5px", padding: "0"}}>Smart Online Dispute Resolution | Grievances Redressal Mechanism</a>
             </p>
 
             <p>
@@ -153,7 +153,7 @@ const Footer = () => {
             </p>
 
             <p>
-              India's largest broker based on networth as per NSE. <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}>NSE broker
+              India's largest broker based on networth as per NSE. <a href="#" style={{ color: "#007bff",textDecoration: "none" ,fontSize: "11.5px", padding: "0"}}>NSE broker
               factsheet</a>
             </p>
 
@@ -173,19 +173,19 @@ const Footer = () => {
               in your bank account. As a business we don't give stock tips, and
               have not authorized anyone to trade on behalf of others. If you
               find anyone claiming to be part of TradeNest and offering such
-              services, please <a href="#" style={{color: "#007bff", fontSize: "11.5px", padding: "0"}}>create a ticket here.</a>
+              services, please <a href="#" style={{ color: "#007bff",textDecoration: "none" ,fontSize: "11.5px", padding: "0"}}>create a ticket here.</a>
             </p>
           </div>
           <div className="ms-5">
             <ul>
-              <a href="#" className="me-4">NSE </a>
-              <a href="#" className="me-4">BSE </a>
-              <a href="#" className="me-4">MCX </a>
-              <a href="#" className="me-4">Terms & conditions </a>
-              <a href="#" className="me-4">Policies & procedures </a>
-              <a href="#" className="me-4">Privacy policy Disclosure </a>
-              <a href="#" className="me-4">For investor's attention </a>
-              <a href="#" className="me-4">Investor charter</a>
+              <a href="#" className="me-4 custom-link">NSE </a>
+              <a href="#" className="me-4 custom-link">BSE </a>
+              <a href="#" className="me-4 custom-link">MCX </a>
+              <a href="#" className="me-4 custom-link">Terms & conditions </a>
+              <a href="#" className="me-4 custom-link">Policies & procedures </a>
+              <a href="#" className="me-4 custom-link">Privacy policy Disclosure </a>
+              <a href="#" className="me-4 custom-link">For investor's attention </a>
+              <a href="#" className="me-4 custom-link">Investor charter</a>
             </ul>
           </div>
         </div>
