@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav
       style={{ height: "70px", backgroundColor: "#fff" }}
-      className="navbar fixed-top navbar-expand-lg border-bottom"
+      className="navbar fixed-top navbar-expand-lg border-bottom "
     >
       
       <div class="container ps-5 pe-5" >
@@ -32,31 +32,31 @@ const Navbar = () => {
           <form class="d-flex" role="search">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <Link class="nav-link" aria-current="page" to="/signup">
+                <Link class="nav-link custom-link" aria-current="page" to="/signup">
                   Signup
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/about">
+                <Link class="nav-link  custom-link" to="/about">
                   About
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/product">
+                <Link class="nav-link custom-link" to="/product">
                   Product
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/pricing">
+                <Link class="nav-link custom-link" to="/pricing">
                   Pricing
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/support">
+                <Link class="nav-link custom-link" to="/support">
                   Support
                 </Link>
               </li>
-              <li class="nav-item mt-2 ">
+              <li class="nav-item mt-3">
                 <i class="fa-solid fa-bars"></i>
               </li>
             </ul>
