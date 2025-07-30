@@ -34,8 +34,11 @@ a:hover{
   padding-left: 2rem;
 }
 .p-font{
-  font-size: 16.5px;
+  font-size: 1rem;
   color: #424242;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-weight: 400;
 }
 .button-font{
   font-size: 19.2px;
@@ -70,4 +73,26 @@ a:hover{
 }
 .custom-mt{
   margin-top: 10rem;
+}
+.custom-mt-pro{
+  margin-top: 8rem;
+}
+.custom-h1{
+  color: #424242;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.custom-h2{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.custom-a{
+  color: #387ed1;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
 }
