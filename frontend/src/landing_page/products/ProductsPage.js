@@ -17,7 +17,12 @@ const ProductsPage = () => {
         googlePlay=""
         appStore=""
       />
-      <RightSection />
+      <RightSection
+        imageUrl="media/images/console.png"
+        productName="Console"
+        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+        learnMore=""
+      />
       <LeftSection
         imageUrl="media/images/coin.png"
         productName="Coin"
@@ -27,7 +32,12 @@ const ProductsPage = () => {
         googlePlay=""
         appStore=""
       />
-      <RightSection />
+      <RightSection
+        imageUrl="media/images/kiteAPI.svg"
+        productName="Kite Connect API"
+        productDescription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
+        learnMore=""
+      />
       <LeftSection
         imageUrl="media/images/varsity.png"
         productName="Varsity mobile"
@@ -37,6 +47,7 @@ const ProductsPage = () => {
         googlePlay=""
         appStore=""
       />
+      <p className="uni-p-font1">Want to know more about our technology stack? Check out the <a href="#" style={{textDecoration: "none"}}>TradeNest.tech</a> blog.</p>
       <Universe />
     </>
   );

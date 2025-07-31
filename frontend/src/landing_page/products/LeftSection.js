@@ -11,13 +11,14 @@ const LeftSection = ({
 }) => {
   return (
     <div className="container">
-      <div className="row" style={{ marginBottom: "6.4rem" }}>
-        <div className="col-8 " style={{ padding: "3rem 8rem " }}>
+      <div className="row" 
+      style={{ marginBottom: "3rem" }}>
+        <div className="col-8 " style={{ padding: "3rem 8rem" }}>
           <img src={imageUrl} />
         </div>
         <div
           className="col-4"
-          style={{ paddingRight: "6rem", marginTop: "6rem" }}
+          style={{ paddingRight: "6rem", marginTop: "6rem"}}
         >
           <h2 className="custom-h2">{productName}</h2>
           <p className="p-font mb-4">{productDescription}</p>

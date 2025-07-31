@@ -3,14 +3,14 @@ body {
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .custom-text {
@@ -23,33 +23,33 @@ code {
   text-align: left;
   margin-left: -20px;
 }
-a:hover{
+a:hover {
   color: rgb(23, 23, 23);
 }
-.heading{
+.heading {
   color: rgb(32, 40, 36);
 }
 
 .nav-item {
   padding-left: 2rem;
 }
-.p-font{
+.p-font {
   font-size: 1rem;
   color: #424242;
   line-height: 1.8;
   margin-bottom: 15px;
   font-weight: 400;
 }
-.button-font{
+.button-font {
   font-size: 19.2px;
 }
-.mt-4-5{
+.mt-4-5 {
   margin-top: 1.8rem;
 }
-.ms-4-5{
+.ms-4-5 {
   margin-left: 1.8rem;
 }
-.custom-link{
+.custom-link {
   text-decoration: none;
   color: #666;
   font-size: 14px;
@@ -57,32 +57,32 @@ a:hover{
   display: inline-block; /* Makes margin-bottom work */
   margin-bottom: 7px;
 }
-.custom-link:hover{
+.custom-link:hover {
   color: #007bff;
 }
-.custom-i{
+.custom-i {
   color: #545454;
 }
-.custom-i:hover{
+.custom-i:hover {
   color: #007bff;
 }
-.text-more-small{
+.text-more-small {
   font-size: 11.5px;
-  line-height: 1.6; 
+  line-height: 1.6;
   color: #9b9b9b;
 }
-.custom-mt{
+.custom-mt {
   margin-top: 10rem;
 }
-.custom-mt-pro{
+.custom-mt-pro {
   margin-top: 8rem;
 }
-.custom-h1{
+.custom-h1 {
   color: #424242;
   font-size: 1.75rem;
   font-weight: 600;
 }
-.custom-h2{
+.custom-h2 {
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 600;
@@ -90,9 +90,28 @@ a:hover{
   letter-spacing: 1px;
 }
 
-.custom-a{
+.custom-a {
   color: #387ed1;
   text-decoration: none;
   font-weight: 500;
   background-color: rgba(0, 0, 0, 0);
+}
+.uni-p-font1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #424242;
+}
+
+.custom-btn {
+  background-color: #387ed1;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  border-radius: 3px;
+  line-height: 1.2em;
 }
