@@ -115,3 +115,102 @@ a:hover {
   border-radius: 3px;
   line-height: 1.2em;
 }
+.subheading {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #9b9b9b;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+.charges-section {
+  padding: 100px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.four {
+  color: #424242;
+  font-size: 16px;
+}
+.four img {
+  height: 300px;
+  width: 235px;
+}
+.charges-banner-heading {
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 600;
+  margin-top: -30px;
+}
+.text-gray {
+  color: #666;
+  font-size: 17px;
+  margin: 16px 0px 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.custom-a-tab {
+  font-weight: 600;
+  padding: 8px 15px;
+  text-decoration: none;
+  border: #9b9b9b;
+  margin: 0 3px 0 0;
+  min-width: 130px;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5rem;
+  color: #387ed1;
+}
+
+.tabs {
+  height: 100%;
+  width: 56px;
+  /* margin-top: -2rem; */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0 1rem 0 1rem;
+  border: 1px solid #ddd;
+}
+thead{
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  /* border: 1px solid #ddd; */
+  padding: 18px 25px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  
+  font-weight: bold;
+  color: #424242;
+  font-size: 14px;
+}
+td {
+  color: #424242;
+  line-height: 1.5rem;
+  font-size: 0.88rem;
+}
+
+td ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.bro-link{
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.p-bro{
+  font-size: 16px;
+  color: #424242;
+  margin: 16px 0px 15px;
+}
