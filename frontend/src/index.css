@@ -115,6 +115,10 @@ a:hover {
   border-radius: 3px;
   line-height: 1.2em;
 }
+.custom-btn:hover{
+  background-color: #424242;
+  color: white;
+}
 .subheading {
   font-size: 1.25rem;
   font-weight: 400;
@@ -166,7 +170,6 @@ a:hover {
 .tabs {
   height: 100%;
   width: 56px;
-  /* margin-top: -2rem; */
 }
 
 table {
@@ -213,4 +216,17 @@ td ul {
   font-size: 16px;
   color: #424242;
   margin: 16px 0px 15px;
+}
+.no-bg {
+  background-color: transparent !important;
+}
+input:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.search-box:focus-within{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+
 }

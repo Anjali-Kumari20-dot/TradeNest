@@ -2,7 +2,11 @@ import React from 'react'
 
 const CreateTicket = () => {
   return (
-    <h1>CreateTicket</h1>
+    <div className='container'>
+      <div className='row'>
+
+      </div>
+    </div>
   )
 }
 
