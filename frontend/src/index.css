@@ -8,6 +8,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
+  box-sizing: border-box;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -90,6 +93,11 @@ a:hover {
   letter-spacing: 1px;
 }
 
+.sp-h2{
+  font-size: 1.06rem;
+  font-weight: 600;
+  color: #424242;
+}
 .custom-a {
   color: #387ed1;
   text-decoration: none;
@@ -229,4 +237,16 @@ input:focus {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 
+}
+.custom-col-10{
+  width: 80%;
+}
+.custom-col-2{
+  width: 20%;
+}
+.scale-hover {
+  transition: transform 0.2s ease;
+}
+.scale-hover:hover {
+  transform: scale(1.02);
 }
