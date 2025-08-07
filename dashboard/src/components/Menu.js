@@ -8,19 +8,19 @@ const Menu = () => {
 
   const handleMenuClick = (index) => {
     setSelectedMenu(index);
-  };
+  }
 
   const handleProfileClick = (index) => {
     setIsProfileDropdownOpen(!isProfileDropdownOpen);
-  };
+  }
 
   const menuClass = "menu";
   const activeMenuClass = "menu selected";
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{ width: "50px" }} />
-      <div className="menus">
+      <img src="kite-logo.svg" style={{ width: "30px" }} />
+      <div className="menus mt-4">
         <ul>
           <li>
             <Link
@@ -91,7 +91,7 @@ const Menu = () => {
         </ul>
         <hr />
         <div className="profile" onClick={handleProfileClick}>
-          <div className="avatar">ZU</div>
+          <div className="avatar" style={{marginTop: "-15px"}}>ZU</div>
           <p className="username">USERID</p>
         </div>
       </div>
