@@ -86,11 +86,11 @@ const WatchList = () => {
         <span className="counts"> {watchlist.length} / 50</span>
       </div>
 
-      {/* <ul className="list">
+      <ul className="list">
         {watchlist.map((stock, index) => {
           return <WatchListItem stock={stock} key={index} />;
         })}
-      </ul> */}
+      </ul>
 
       {/* <DoughnutChart data={data} /> */}
     </div>
