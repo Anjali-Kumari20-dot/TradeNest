@@ -92,7 +92,7 @@ const WatchList = () => {
         })}
       </ul>
 
-      {/* <DoughnutChart data={data} /> */}
+      <DoughnutChart data={data} />
     </div>
   );
 };
@@ -117,7 +117,7 @@ const WatchListItem = ({ stock }) => {
         <div className="itemInfo">
           <span className="percent">{stock.percent}</span>
           {stock.isDown ? (
-            <KeyboardArrowDown className="down" />
+            < KeyboardArrowDown className="down" />
           ) : (
             <KeyboardArrowUp className="down" />
           )}
