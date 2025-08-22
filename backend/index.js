@@ -7,6 +7,7 @@ const cors = require("cors");
 const { HoldingsModel } = require("./models/HoldingsModel");
 const { PositionsModel } = require("./models/PositionsModel");
 const { OrdersModel } = require("./models/OrdersModel");
+const authRoute = require("./Routes/AuthRoute");
 
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
@@ -153,45 +154,45 @@ app.get("/addHoldings", async (req, res) => {
   res.send("Done :)");
 });
 
-// app.get("/addPositions", async (req, res) => {
-//   let tempPositions = [
-//     {
-//       product: "CNC",
-//       name: "EVEREADY",
-//       qty: 2,
-//       avg: 316.27,
-//       price: 312.35,
-//       net: "+0.58%",
-//       day: "-1.24%",
-//       isLoss: true,
-//     },
-//     {
-//       product: "CNC",
-//       name: "JUBLFOOD",
-//       qty: 1,
-//       avg: 3124.75,
-//       price: 3082.65,
-//       net: "+10.04%",
-//       day: "-1.35%",
-//       isLoss: true,
-//     },
-//   ];
-//   tempPositions.forEach((item) => {
-//     let newPositions = new PositionsModel({
-//       product: item.product,
-//       name: item.name,
-//       qty: item.qty,
-//       avg: item.avg,
-//       price: item.price,
-//       net: item.net,
-//       day: item.day,
-//       isLoss : item.isLoss,
-//     });
+app.get("/addPositions", async (req, res) => {
+  let tempPositions = [
+    {
+      product: "CNC",
+      name: "EVEREADY",
+      qty: 2,
+      avg: 316.27,
+      price: 312.35,
+      net: "+0.58%",
+      day: "-1.24%",
+      isLoss: true,
+    },
+    {
+      product: "CNC",
+      name: "JUBLFOOD",
+      qty: 1,
+      avg: 3124.75,
+      price: 3082.65,
+      net: "+10.04%",
+      day: "-1.35%",
+      isLoss: true,
+    },
+  ];
+  tempPositions.forEach((item) => {
+    let newPositions = new PositionsModel({
+      product: item.product,
+      name: item.name,
+      qty: item.qty,
+      avg: item.avg,
+      price: item.price,
+      net: item.net,
+      day: item.day,
+      isLoss : item.isLoss,
+    });
 
-//     newPositions.save();
-//   });
-//   res.send("Done :)");
-// });
+    newPositions.save();
+  });
+  res.send("Done :)");
+});
 
 app.get("/allHoldings", async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
@@ -214,6 +215,45 @@ app.post("/newOrder", async (req, res) => {
   await newOrder.save();
   res.send("Order saved");
 });
+
+app.post('/sellStock', async (req, res) => {
+  const {name, qty, price, mode } = req.body;
+
+  const userHoldings = await HoldingsModel.findOne({ name });
+
+  if(!userHoldings || userHoldings.qty < qty){
+    return res.status(400).send("Insufficient holdings");
+  }
+
+  const avgBuyprice = userHoldings.avgPrice || 0;
+  const pnl = (price - avgBuyprice) * qty;
+
+  userHoldings.qty -= qty;
+  await userHoldings.save();
+
+  let sellStock = new OrdersModel({
+    name,
+    qty,
+    price,
+    mode,
+    type: 'SELL',
+    pnl,
+  });
+
+  await sellStock.save();
+  res.send({
+    message: "Sell order executed",
+    remainingQty: userHoldings.qty,
+    pnl: pnl,
+  })
+})
+
+app.get("/stockDetails", async (req, res) => {
+  const { name } = req.query;
+  const stock = await HoldingsModel.findOne({ name });
+  res.json({ name: stock.name, price: stock.price });
+});
+app.use("/", authRoute);
 
 app.listen(PORT, () => {
   console.log("App started");
