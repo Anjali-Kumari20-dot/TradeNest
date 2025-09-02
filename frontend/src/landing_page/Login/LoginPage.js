@@ -1,20 +1,17 @@
-import React, { useState } from "react";
-import "./Signup.css";
+import React, { useState }  from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+import "./Login.css";
 
-const Signup = () => {
-  const [mobile, setMobile] = useState("");
+const LoginPage = () => {
   const navigate = useNavigate();
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
-    username: "",
   });
 
-  const { email, password, username } = inputValue;
-
+  const { email, password } = inputValue;
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setInputValue({
@@ -22,28 +19,31 @@ const Signup = () => {
       [name]: value,
     });
   };
-
-  const handleError = (err) =>
+  const handleError = (err) => {
     toast.error(err, {
       position: "bottom-left",
     });
+  };
 
-  const handleSuccess = (msg) =>
+  const handleSuccess = (msg) => {
     toast.success(msg, {
-      position: "bottom-right",
+      position: "bottom-left",
     });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4002/signup",
+        "http://localhost:4002/login",
         {
           ...inputValue,
         },
         { withCredentials: true }
       );
+      console.log(data);
       const { success, message } = data;
+
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
@@ -59,53 +59,16 @@ const Signup = () => {
       ...inputValue,
       email: "",
       password: "",
-      username: "",
     });
   };
-
-  const handleOtpClick = () => {
-    console.log("Sending OTP to:", mobile);
-  };
-
   return (
-    <div
-      className="container"
-      style={{ marginTop: "8rem", marginBottom: "3rem" }}
-    >
+    <div className="container">
       <div className="row">
-        <div className="text-center">
-          <h1>Open a free demat & trading account online</h1>
-          <p>
-            Start investing brokerage free and join a community of 15L+ core
-            investors and traders
-          </p>
-        </div>
-        {/* left section */}
-        <div className="row signup-left" style={{ margin: "5rem" }}>
-          <img
-            src="media/images/landing-DQ76ex-B.svg"
-            alt="Trading dashboard"
-            className="signup-image"
-          />
-        </div>
-
-        {/* right-section */}
-        <div className="col">
-          <div
-            className="row signup-right"
-            style={{ marginTop: "5rem", marginLeft: "3rem" }}
-          >
+        <div className="" style={{marginTop: "8rem", marginBottom: "4rem", display: "flex", justifyContent: "center"}}>
             <form onSubmit={handleSubmit}>
-              <div className="signup-card">
-                <h2 style={{ marginBottom: "0.7rem" }}>Signup now</h2>
-                <p
-                  className="subtext"
-                  style={{ fontSize: "15px", color: " #888" }}
-                >
-                  Or track your existing application
-                </p>
-
-                <div className="input-group" style={{ gap: "1rem" }}>
+              <div className="Login-card">
+                <h2 style={{ marginBottom: "1.5rem" }}>Login to TradeNest</h2>
+                <div className="input-group" style={{ gap: "1.3rem", display: "flex", justifyContent: "center" }}>
                   <div
                     className="email-input-wrapper"
                     style={{ marginBottom: "1.5rem", height: "2rem" }}
@@ -128,27 +91,6 @@ const Signup = () => {
                     />
                   </div>
                   <div
-                    className="username-input-wrapper"
-                    style={{ marginBottom: "1.5rem", height: "2rem" }}
-                  >
-                    <input
-                      type="text"
-                      name="username"
-                      value={username}
-                      placeholder="Enter your username"
-                      onChange={handleOnChange}
-                      style={{
-                        border: "2px solid #bbb",
-                        borderRadius: "6px",
-                        padding: "0.5rem",
-                        marginLeft: "1rem",
-                        outline: "none",
-                        height: "3.5rem",
-                        width: "20rem",
-                      }}
-                    />
-                  </div>
-                  <div
                     className="password-input-wrapper"
                     style={{ marginBottom: "1.5rem", height: "2rem" }}
                   >
@@ -156,7 +98,7 @@ const Signup = () => {
                       type="password"
                       name="password"
                       value={password}
-                      placeholder="Enter your Password"
+                      placeholder="Enter your password"
                       onChange={handleOnChange}
                       style={{
                         border: "2px solid #bbb",
@@ -174,27 +116,19 @@ const Signup = () => {
                 <button
                   type="submit"
                   className="p-2 btn btn-primary fs-5 mt-4"
-                  style={{ width: "60%", margin: "0 auto" }}
+                  style={{ width: "60%", margin: "0 auto", marginTop: "0.5rem" }}
                 >
                   Submit
                 </button>
                 <br />
                 <br />
-                <span>
-                  Already have an account? <Link to={"/login"}>Login</Link>
-                </span>
-
-                <p className="signup-terms">
-                  By proceeding, you agree to the TradeNest terms & privacy
-                  policy
-                </p>
               </div>
             </form>
-          </div>
+            <ToastContainer />
         </div>
       </div>
     </div>
   );
 };
 
-export default Signup;
+export default LoginPage;

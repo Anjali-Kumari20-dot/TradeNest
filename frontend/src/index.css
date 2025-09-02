@@ -250,3 +250,16 @@ input:focus {
 .scale-hover:hover {
   transform: scale(1.02);
 }
+.navbar-logo {
+  width: 7%;
+  margin-right: -10px;
+}
+.nav-item-link {
+  font-weight: 500;
+  color: #333;
+}
+.Login-card{
+  height: 15rem;
+  width: 20rem;
+  border: #666 solid 1px;
+}

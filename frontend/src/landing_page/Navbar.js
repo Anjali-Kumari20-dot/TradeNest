@@ -1,24 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const[isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <nav
       style={{ height: "70px", backgroundColor: "#fff" }}
       className="navbar fixed-top navbar-expand-lg border-bottom "
     >
-      
+
+     
       <div class="container ps-5 pe-5" >
         <Link class="navbar-brand" to="/">
           <img
             src="media/images/TradeNestLogo.png"
-            className="img-fluid ms-5"
-            style={{ width: "7%", marginRight: "-10px" }}
+            className="img-fluid ms-5 navbar-logo"
           />
           <img src="media/images/TradeNest.png" style={{ width: "18%" }} />
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -34,6 +36,11 @@ const Navbar = () => {
               <li class="nav-item">
                 <Link class="nav-link custom-link" aria-current="page" to="/signup">
                   Signup
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link custom-link" aria-current="page" to="/login">
+                  Login
                 </Link>
               </li>
               <li class="nav-item">
